@@ -71,13 +71,13 @@ p {
 ::selection { background: #85dca9; } /* WebKit/Blink Browsers */
 ::-moz-selection { background: #85dca9; } /* Gecko Browsers */
 
-a:link, a:visited
+ a:link, a:visited
 {
 	text-decoration: underline;
 	color: #000;
 }
 
-a:selected, a:hover
+a:hover
 {
 	text-decoration: none;
 }
@@ -249,18 +249,33 @@ footer
 	text-decoration: none;
 }
 
+.newsItem .btn-news,
+.newsItem .btn-event {
+	color: white;;
+}
+
+.submenuInfo {
+	margin-bottom: 40px;
+}
+
+
+.submenuInfo h2 {
+	margin-bottom: 10px;
+}
+
 .btn-event {
 	background-color: #67bd2d;
 	border: none;
 	color: #ffffff;
-	text-align: center;
 	text-align: none;
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 5px;
 	padding: 1px 15px; 
 	margin: 0px;
+	text-decoration: none;
 }
+
 
 .btn-news {
 	background-color: #4c96ea;
