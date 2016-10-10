@@ -26,7 +26,7 @@ body
 }
 
 @font-face {
-  font-family: "Calibri Bold";
+  font-family: Calibri;
   src: local("Calibri Bold"), url(assets/Calibri_bold.ttf);
   font-weight: bold;
 }
@@ -54,11 +54,18 @@ h3 {
 }
 
 h4 {
-	font-size: 1.3em;
+	font-size: 1.1em;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 0px;
 }
 
 h5 {
 	font-size: 0.7em;
+}
+
+p {
+	margin: 0;
 }
 
 ::selection { background: #85dca9; } /* WebKit/Blink Browsers */
@@ -230,9 +237,16 @@ footer
 	width: 505;
 }
 
-.newsItem :first-child {
+.newsItem {
+	margin-bottom: 20px;
+}
 
+.newsItem :nth-child(3) {
+	margin: 0px 0px 10px 0px;
+}
 
+.newsItem a {
+	text-decoration: none;
 }
 
 .btn-event {
