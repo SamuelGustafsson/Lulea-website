@@ -254,6 +254,27 @@ footer
 	color: white;;
 }
 
+.btn-event:hover {
+   background-color: #2E933C;
+   box-shadow: 0 .125em rgba(255,255,255,.4), inset 0 .063em rgba(255,255, 255,.4), inset 0 -0.188em #2E933C;
+}
+
+.btn-news:hover {
+   background-color: #0A369D;
+   box-shadow: 0 .125em rgba(255,255,255,.4), inset 0 .063em rgba(255,255, 255,.4), inset 0 -0.188em #0A369D;
+}
+
+.social-media-icons {
+	margin-top: 20px;
+	clear: both;
+	padding-left: 40px;
+}
+
+.social-icons {
+	width: 50px;
+	height: 50px;
+}
+
 .submenuInfo {
 	margin-bottom: 40px;
 }
@@ -303,7 +324,6 @@ footer
 	margin: 0px;
 }
 
-
 .wrappermw
 {
 	max-width: 940px;
@@ -337,6 +357,7 @@ footer
 .wrapperfooter ul {
 	width:100%;
 	list-style:none;
+	height: 215px;
 }
 .wrapperfooter ul li {
 	float:left;
