@@ -1,6 +1,17 @@
 /*CSS Imports */
 @import url("normalize.css"); 
 
+/*fontawesome icons*/
+.eventArrow {
+	color: #67bd2d;
+	margin-right: 5px;
+}
+
+.newsArrow {
+	color: #4c96ea;
+	margin-right: 5px;
+}
+
 body 
 {
 	font-family: 'Calibri', sans-serif;
@@ -15,7 +26,7 @@ body
 }
 
 @font-face {
-  font-family: Calibri;
+  font-family: "Calibri Bold";
   src: local("Calibri Bold"), url(assets/Calibri_bold.ttf);
   font-weight: bold;
 }
@@ -77,6 +88,7 @@ a:hover#menu-icon {
 	background-color: #fff;
 	border-radius: 4px 4px 0 0;
 }
+
 
 /******************/
 
@@ -199,13 +211,69 @@ footer
 	line-height: 1.8em;
 }
 
-.divleft { max-width: 510px; }
-.divright { max-width: 390px; }
+.divleft, .divright {
+	box-sizing: border-box;
+}
+
+.divleft { 
+	max-width: 510px;
+	padding-right: 30px; 
+}
+.divright { 
+	max-width: 390px; 
+	padding-left: 30px;}
 .footerlinks { max-width: 130px; background: yellow; }
 	
 .divleft img {
-	
+	margin-top: 10px;
+	height: 252;
+	width: 505;
 }
+
+.newsItem :first-child {
+
+
+}
+
+.btn-event {
+	background-color: #67bd2d;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	text-align: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 1px 15px; 
+	margin: 0px;
+}
+
+.btn-news {
+	background-color: #4c96ea;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	text-align: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 1px 15px; 
+	margin: 0px;
+}
+
+.date-placeholder {
+	background-color: #dedede;
+	border: none;
+	color: #6b6b6b;
+	text-align: center;
+	text-align: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 1px 15px; 
+	margin: 0px;
+}
+
 
 .wrappermw
 {
