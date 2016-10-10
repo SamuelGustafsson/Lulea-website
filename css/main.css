@@ -1,3 +1,6 @@
+/*CSS Imports */
+@import url("normalize.css"); 
+
 body 
 {
 	font-family: 'Calibri', sans-serif;
@@ -8,12 +11,12 @@ body
 
 @font-face {
   font-family: Calibri;
-  src: local("Calibri"), url(Calibri.ttf);
+  src: local("Calibri"), url(assets/Calibri.ttf);
 }
 
 @font-face {
   font-family: Calibri;
-  src: local("Calibri Bold"), url(Calibri_bold.ttf);
+  src: local("Calibri Bold"), url(assets/Calibri_bold.ttf);
   font-weight: bold;
 }
 
@@ -76,11 +79,6 @@ a:hover#menu-icon {
 }
 
 /******************/
-
-.vertspacer1 {
-	display: block;
-	height: 80px;
-}
 
 .rubrik_img {
 	display:table;
