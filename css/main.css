@@ -1,0 +1,299 @@
+body 
+{
+	font-family: 'Calibri', sans-serif;
+	background: #fff;
+	color: #000;
+	font-size: 1.0em;
+}
+
+@font-face {
+  font-family: Calibri;
+  src: local("Calibri"), url(Calibri.ttf);
+}
+
+@font-face {
+  font-family: Calibri;
+  src: local("Calibri Bold"), url(Calibri_bold.ttf);
+  font-weight: bold;
+}
+
+img 
+{
+	max-width:100%; 
+	max-height:100%;
+    height: auto;
+    width: auto\9; /* ie8 */	
+}
+
+h1 {
+	font-size: 4.5em;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin-top: 20px;
+	margin-bottom: 30px;	
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 0.7em;
+}
+
+::selection { background: #85dca9; } /* WebKit/Blink Browsers */
+::-moz-selection { background: #85dca9; } /* Gecko Browsers */
+
+a:link, a:visited
+{
+	text-decoration: underline;
+	color: #000;
+}
+
+a:selected, a:hover
+{
+	text-decoration: none;
+}
+
+/***** MOBILMENY *****/
+
+#menu-icon {
+	width: 24px;
+	height: 24px;
+	margin-top: -10px;
+	background: url(../img/menu_icon.png) center;
+}
+
+a:hover#menu-icon {
+	background-color: #fff;
+	border-radius: 4px 4px 0 0;
+}
+
+/******************/
+
+.vertspacer1 {
+	display: block;
+	height: 80px;
+}
+
+.rubrik_img {
+	display:table;
+	background-color:rgba(0, 0, 0, 0.36);
+	color: #fff;
+	padding: 5px 30px 5px 30px;
+	width: auto;
+	margin-bottom: 2px;
+	margin-left: 30px;
+	margin-right: 30px;
+	clear: both;
+	border-radius: 5px;
+}
+
+.rubrik_img h1 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+.rubrik_img h2 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-size: 1.9em;
+}
+
+.bigimg {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 414px;
+	margin-top: 0px;
+	background:url(../img/back_top.jpg) center no-repeat;
+	background-color: #303030;
+}
+
+
+nav 
+{
+	display: block;
+	float: right;
+	z-index: 6;
+}
+
+nav ul 
+{
+	margin: 0px;
+	list-style: none;
+}
+
+nav li 
+{
+	display: block;
+	float: left;
+	text-align: right;
+	padding: 0px 15px 0px 15px;
+}
+
+nav a, nav a:link, nav a:visited 
+{
+	text-decoration: none;
+	font-size: 1em;	
+	color: #000;
+}
+
+nav a.selected, nav a:hover 
+{
+	color: #4c9f6e;
+	text-decoration: none;
+	transition: all 0.3s linear;
+}
+
+header 
+{
+	left: 0;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 86px;
+}
+
+header img {
+	top: 50%;
+	transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	-o-transform: translateY(50%);	
+	vertical-align: middle;
+	line-height: 86px;
+	margin-left: 30px;
+}
+
+header a 
+{
+	text-decoration: none;
+	color: #000;
+}
+
+footer 
+{
+	clear: both;
+	margin-top: 600px;
+	width: 100%;
+	background-color: #ddd;
+	color: #000;
+}
+
+.divleft, .divright, .footerlinks
+{
+	float: left;
+	overflow:hidden;
+	display: inline-block;
+	padding: 10px;
+	line-height: 1.8em;
+}
+
+.divleft { max-width: 510px; }
+.divright { max-width: 390px; }
+.footerlinks { max-width: 130px; background: yellow; }
+	
+
+
+.wrappermw
+{
+	max-width: 940px;
+	margin: 0 auto;	
+}
+
+.wrapper
+{
+	padding: 50px 30px 30px 30px;
+}
+
+.scrollup {
+	position: fixed;
+	bottom: 30px;
+	right: 50%;
+	cursor: pointer;
+	display: none;
+}
+
+
+.wrapperfooter a {
+	text-decoration: none;
+}
+
+.wrapperfooter
+{
+	padding: 30px 30px 230px 30px;
+	color: #b1b1b1;
+}
+
+.wrapperfooter ul {
+	width:100%;
+	list-style:none;
+}
+.wrapperfooter ul li {
+	float:left;
+	width:140px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.wrapperfooter ul li ul {
+	padding:0;
+}
+.wrapperfooter ul li ul li {
+	float:left;
+	font-size: 0.8em;
+	padding:1px 0;
+	font-weight: normal;
+}
+
+.cright {
+	display: block;
+	clear: both;
+	padding-top: 60px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	/***** MOBILMENY *****/
+	
+	#menu-icon { display:inline-block;margin-right: 30px; }
+
+	.mobmenunav:hover ul { display: block; }
+	
+	.mobmenunav { float: right; }	
+
+	.mobmenunav ul { 
+		display: none;
+		position: fixed;
+		background: #fff;
+		top: 0px;
+		border: 1px solid #ddd;
+		right:0px;
+		width: 100%;
+		z-index: 10;
+		padding: 10px 0px 10px 0px;
+	}
+
+	.mobmenunav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0px 10px 0px;
+	}
+	
+	/******************/
+
+
+
+}
+
