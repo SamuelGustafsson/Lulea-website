@@ -114,7 +114,9 @@ a:hover#menu-icon {
 	height: 414px;
 	margin-top: 0px;
 	background:url(../img/back_top.jpg) center no-repeat;
+	background-size: cover; 
 	background-color: #303030;
+	padding-top: 80px;
 }
 
 
