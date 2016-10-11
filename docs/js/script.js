@@ -1,6 +1,6 @@
 	$(function() {
 		
-		//dÃ¶lj/visa scrolla upp knapp
+		//dölj/visa scrolla upp knapp
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 100) {
 				$('.scrollup').fadeIn();
