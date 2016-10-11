@@ -252,6 +252,10 @@ footer
 	line-height: 1.5em;
 }
 
+.newsItem h4 {
+	display: inline;
+}
+
 .newsItem a {
 	text-decoration: none;
 }
