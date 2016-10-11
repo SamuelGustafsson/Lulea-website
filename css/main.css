@@ -22,12 +22,12 @@ body
 
 @font-face {
   font-family: Calibri;
-  src: local("Calibri"), url(assets/Calibri.ttf);
+  src: local("Calibri"), url(../assets/Calibri.ttf);
 }
 
 @font-face {
   font-family: Calibri;
-  src: local("Calibri Bold"), url(assets/Calibri_bold.ttf);
+  src: local("Calibri Bold"), url(../assets/Calibri_bold.ttf);
   font-weight: bold;
 }
 
@@ -88,7 +88,7 @@ a:hover
 	width: 24px;
 	height: 24px;
 	margin-top: -10px;
-	background: url(../img/menu_icon.png) center;
+	background: url(../assets/img/menu_icon.png) center;
 }
 
 a:hover#menu-icon {
@@ -133,7 +133,8 @@ a:hover#menu-icon {
 	height: 414px;
 	margin-top: 0px;
 	background:url(../assets/img/back_top.jpg) center no-repeat;
-	background-size: cover; 
+	/*background-size: cover; */
+	box-sizing: border-box;
 	background-color: #303030;
 	padding-top: 80px;
 }
@@ -204,10 +205,15 @@ header a
 footer 
 {
 	clear: both;
-	margin-top: 600px;
+	margin-top: 100px;
 	width: 100%;
 	background-color: #ddd;
 	color: #000;
+}
+
+.gmap {
+	width: 100%;
+	height: 400px;
 }
 
 .divleft, .divright, .footerlinks
@@ -223,18 +229,17 @@ footer
 }
 
 .divleft { 
-	max-width: 510px;
+	max-width: 580px;
 	padding-right: 30px; 
 }
 .divright { 
-	max-width: 390px; 
+	max-width: 320px; 
 	padding-left: 30px;}
 .footerlinks { max-width: 130px; background: yellow; }
 	
 .divleft img {
 	margin-top: 10px;
-	height: 252;
-	width: 505;
+	max-width: 505px;
 }
 
 .newsItem {
@@ -243,6 +248,8 @@ footer
 
 .newsItem :nth-child(3) {
 	margin: 0px 0px 10px 0px;
+	font-size: 0.9em;
+	line-height: 1.5em;
 }
 
 .newsItem a {
@@ -251,7 +258,7 @@ footer
 
 .newsItem .btn-news,
 .newsItem .btn-event {
-	color: white;;
+	color: #fff;
 }
 
 .btn-event:hover {
@@ -271,8 +278,9 @@ footer
 }
 
 .social-icons {
-	width: 50px;
-	height: 50px;
+	width: 24px;
+	height: 24px;
+	padding-right: 5px;
 }
 
 .submenuInfo {
@@ -288,7 +296,6 @@ footer
 	background-color: #67bd2d;
 	border: none;
 	color: #ffffff;
-	text-align: none;
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 5px;
@@ -303,7 +310,6 @@ footer
 	border: none;
 	color: #ffffff;
 	text-align: center;
-	text-align: none;
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 5px;
@@ -316,7 +322,6 @@ footer
 	border: none;
 	color: #6b6b6b;
 	text-align: center;
-	text-align: none;
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 5px;
@@ -336,8 +341,10 @@ footer
 }
 
 .scrollup {
+	font-size: 3em;
+	color: #000;
 	position: fixed;
-	bottom: 30px;
+	bottom: -20px;
 	right: 50%;
 	cursor: pointer;
 	display: none;
@@ -381,6 +388,20 @@ footer
 	padding-top: 60px;
 }
 
+
+
+@media only screen and (max-width: 980px) {
+
+	.divleft, .divright {
+		max-width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.divleft img {
+		max-width: 100%;
+	}	
+
+}
 
 @media only screen and (max-width: 768px) {
 	

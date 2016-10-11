@@ -5,11 +5,9 @@
 	<title>Välkommen till Luleå!</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<!--linking to Fontawesome library-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 
@@ -17,7 +15,7 @@
 
 <body>
 
-	<div class="scrollup"><img src="img/scrollup.png" alt="Scroll up"></div>
+	<div class="scrollup"><i class="fa fa-sort-asc" aria-hidden="true"></i></div>
 
 	<header>
 		<div class="wrappermw">
@@ -30,8 +28,8 @@
 				<div class="mobmenunav">
 					<a href="#" id="menu-icon"></a>
 					<ul>
-						<li><a href="#turism">Turism</a></li>
-						<li><a href="#foretagande">Företagande</a></li>
+						<li><a href="#turister">Turister</a></li>
+						<li><a href="#foretagare">Företagare</a></li>
 						<li><a href="#studenter">Studenter</a></li>
 						<li><a href="#bo">Bo i Luleå</a></li>
 						<li><a href="#kommunen">Kommunen</a></li>
@@ -48,7 +46,7 @@
 				<h1>Välkommen till Luleå!</h1>
 			</div>
 			<div class="rubrik_img">
-				<h2>Sveriges vackraste håla!</h2>
+				<h2>Sveriges vackraste stad!</h2>
 			</div>
 		</div>
 	</div>
@@ -56,28 +54,28 @@
 	<main class="wrapper wrappermw">
 
 		<section class="divleft">
-			<div class="submenuInfo">
-				<h2>Besökare</h2>
+			<div class="submenuInfo" id="turister">
+				<h2>Turister</h2>
 				Här hittar du information Luleå kommuns kommande arrangemang, fritids- och kulturverksamheter. Vill du veta vad som händer
 				i hela Luleå, besök Luleå turistcenter eller Luleå.nulänk till annan webbplats.
 				<img src="https://pixabay.com/static/uploads/photo/2016/09/03/21/29/bridge-1642768_960_720.jpg" alt="">
 			</div>
 
-			<div class="submenuInfo">
+			<div class="submenuInfo" id="foretagare">
 				<h2>Företagare</h2>
 				Luleå, med fler än 76 000 invånare, bildar tillsammans med grannkommunerna Piteå, Boden, Älvsbyn, Kalix och Övertorneå Luleåregionen
 				med ungefär 173 000 invånare.
 				<img src="https://pixabay.com/static/uploads/photo/2014/07/30/22/56/workstation-405768_960_720.jpg" alt="">
 			</div>
 
-			<div class="submenuInfo">
+			<div class="submenuInfo" id="studenter">
 				<h2>Studenter</h2>
 				Varje år kommer nya studenter till Luleå från hela Sverige och världen. LTU är Skandinaviens nordligaste tekniska universitet
 				med 19 000 studenter och ett brett utbud av utbildningar.
 				<img src="https://pixabay.com/static/uploads/photo/2016/01/07/16/47/ipad-1126136_960_720.jpg" alt="">
 			</div>
 
-			<div class="submenuInfo">
+			<div class="submenuInfo" id="bo">
 				<h2>Bo i Luleå</h2>
 				Att bo i Luleå är att ha mera att välja på, och mera tid för familj, vänner och fritid. De korta avstånden mellan bostad,
 				jobb, skola och fritidsaktiviteter gör livet enklare. Naturen är också nära. Du kan ha skidorna vid dörren och båten
@@ -85,7 +83,7 @@
 				<img src="https://pixabay.com/static/uploads/photo/2013/10/14/22/49/river-195795_960_720.jpg" alt="">
 			</div>
 
-			<div class="submenuInfo">
+			<div class="submenuInfo" id="kommunen">
 				<h2>Kommunen</h2>
 				Här hittar du information Luleå kommuns kommande arrangemang, fritids- och kulturverksamheter. Vill du veta vad som händer
 				i hela Luleå, besök Luleå turistcenter eller Luleå.nulänk till annan webbplats.
@@ -94,9 +92,9 @@
 
 		</section>
 		<section class="divright">
-			<h2>Nyheter & Händelser</h2>
+			<h2>Nyheter</h2>
 			Här hittar du information Luleå kommuns kommande arrangemang, fritids- och kulturverksamheter. Vill du veta vad som händer
-			i hela Luleå, besök Luleå turistcenter eller Luleå.nulänk till annan webbplats.
+			i hela Luleå, besök Luleå turistcenter eller vår webbplats.
 
 			<div class="newsItem">
 				<i class="fa fa-arrow-right eventArrow" aria-hidden="true"></i>
@@ -120,9 +118,9 @@
 			<div class="newsItem">
 				<i class="fa fa-arrow-right eventArrow" aria-hidden="true"></i>
 				<h4><a href="#">Jill Johnson - For you I'll wait</a></h4>
-				<p>
-					I slutet av september 2016 åker Jill Johnson ut på turné och med sig har hon musiken från sitt nya album som släpps i början
-					av september!</p>
+				<p>I slutet av september 2016 åker Jill Johnson ut på turné och med sig har hon musiken från sitt nya album som släpps i början
+					av september!
+				</p>
 				<a href="#" class="btn-event">Evenemang</a>
 				<p class="date-placeholder">23/5 - 2016</p>
 			</div>
@@ -173,13 +171,17 @@
 			</div>
 
 		</section>
+		
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52768.978909238096!2d22.111318323325417!3d65.58708508899718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467f6314d2e8b867%3A0x4034506de8c8620!2zTHVsZcOl!5e0!3m2!1sen!2sse!4v1476130948849" class="gmap" style="border:0" allowfullscreen></iframe>
+		
 
 	</main>
 
 	<footer>
 		<div class="wrapperfooter wrappermw">
 			<ul>
-				<li><a href="#turism">Turism</a>
+				<li><a href="#turister">Turister</a>
 					<ul>
 						<li><a href="#">Boende</a></li>
 						<li><a href="#">Friluftsliv</a></li>
@@ -192,7 +194,7 @@
 					</ul>
 				</li>
 
-				<li><a href="#foretagande">Företagande</a>
+				<li><a href="#foretagare">Företagare</a>
 					<ul>
 						<li><a href="#">Starta företag</a></li>
 						<li><a href="#">Driva företag</a></li>
@@ -234,12 +236,14 @@
 				</li>
 			</ul>
 			<div class="social-media-icons">
-				<img class="social-icons" src="assets/img/facebook-icon.png" alt="">
-				<img class="social-icons" src="assets/img/youtube-icon.png" alt="">
-				<img class="social-icons" src="assets/img/twitter-icon.png" alt="">
-				<img class="social-icons" src="assets/img/instagram-icon.png" alt="">
+				<a href="#"><img class="social-icons" src="assets/img/facebook-icon.png" alt="Facebook"></a>
+				<a href="#"><img class="social-icons" src="assets/img/youtube-icon.png" alt="Youtube"></a>
+				<a href="#"><img class="social-icons" src="assets/img/twitter-icon.png" alt="Twitter"></a>
+				<a href="#"><img class="social-icons" src="assets/img/instagram-icon.png" alt="Instagram"></a>
 			</div>
 			<div class="cright">&copy; 2016 Luleå kommun</div>
+			
+
 		</div>
 	</footer>
 
