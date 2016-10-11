@@ -297,6 +297,10 @@ footer
 	margin-bottom: 10px;
 }
 
+.submenuInfo a:active, a:hover {
+	text-decoration: underline;
+}
+
 .btn-event {
 	background-color: #67bd2d;
 	border: none;
